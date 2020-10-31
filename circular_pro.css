@@ -1,0 +1,148 @@
+/* creating circular skill bar part2 in skill section */
+.box_pro{
+    position: absolute;
+    top: 290%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.562);
+    color: black;
+    stroke: black;
+}   
+
+.box_pro:nth-child(2){
+    position: absolute;
+    top: 290%;
+    left: 38%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.562);
+    color: black;
+    stroke: black;
+}  
+
+.box_pro:nth-child(3){
+    position: absolute;
+    top: 290%;
+    left: 66%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.562);
+    color: black;
+    stroke: black;
+}    
+
+.box_pro i{
+    position: relative;
+    font-size: 50px;
+    top: 15px;
+}
+
+.box_pro:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.562);
+    transition: 500ms;
+    background-color: rgba(0, 140, 255, 0.521);
+    color: white !important;
+    stroke: white;
+}
+
+.box_pro:hover circle:nth-child(1){
+    stroke: black;
+    transition: 500ms;
+}
+
+.box_pro .percent2
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+/* .box .percent svg
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+} */
+
+.box_pro svg circle
+{
+    fill: none;
+    height: 150px;
+    width: 150px;
+    stroke-width: 10;
+    /* stroke: black; */
+    transform: translate(5px, 5px);
+}
+
+.box_pro .number2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: black; */
+}
+
+.box_pro .number2 h2{
+    font-size: 48px;
+}
+
+.box_pro span{
+    font-size: 24px;
+}
+
+.box_pro .text2{
+    padding: 5px 0 0;
+    /* color: black; */
+}
+
+.box_pro svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 5;
+    /* stroke: #000; */
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+
+.box_pro svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: gainsboro;
+}
+
+.box_pro svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*85) / 100);
+    /* stroke: black; */
+}
+
+.box_pro:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*80) / 100);
+    /* stroke: black; */
+}
+
+.box_pro:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440*60) / 100);
+    /* stroke: black; */
+}
